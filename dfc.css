@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: url("Pictures/Cloud-Background.png");
+    background-repeat: repeat;
+    background-size: 100% 100%; 
+    z-index: -100000;
+}
+
+.grass {
+    width: 25%;
+    height: 8%;
+    position: absolute;
+    bottom: -2%;
+    background-image: url("Pictures/grass.png");
+    background-repeat: repeat-x;  
+    background-size: cover;
+}
+
+.g2 {
+    left: 25%
+}
+
+.g3 {
+    left: 50%;
+}
+
+.g4 {
+    left: 75%
+}
+
+.corndog {
+    height: 60vh;
+    width: 14.4vh;
+    margin-top: 8vh;
+    margin-left: 44vw;
+    background: url("Pictures/corndog.png");
+    background-repeat: repeat;
+    background-size: 100% 100%;
+    transition: transform .3s;
+    z-index: 10;
+}
+
+.corndog:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+#bb-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1000;
+}
